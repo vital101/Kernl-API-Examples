@@ -18,6 +18,7 @@ The example for using the Purchase Code API is in the `purchase-code-example.php
 - The plugin or theme ID that you want to add/remove purchase codes from.  You can find this id by navigating to the Plugins or Themes page in Kernl.  In the table that lists yours products, you'll see the **UUID** listed in one of the columns.  This is the ID that you need.
 
 To run the example, navigate to the root of the cloned repository and type the following:
+
 `php purchase-code-example.php <email> <password> <plugin/theme id>`
 
 After that, you should get output that looks like:

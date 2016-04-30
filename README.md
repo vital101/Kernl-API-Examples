@@ -38,3 +38,49 @@ After that, you should get output that looks like:
 
 
     Purchase code deleted.
+
+## Changelog Example
+
+The example for using the Plugin Changelog API is in the `changelog-example.php` file.  It takes 3 command line arguments.
+
+- Your email address that you log in to Kernl with.
+- Your password.
+- The plugin ID that you want to add/get/remove changelogs from.  You can find this id by navigating to the Plugins page in Kernl.  In the table that lists yours products, you'll see the **UUID** listed in one of the columns.  This is the ID that you need.
+
+To run the example, navigate to the root of the cloned repository and type the following:
+
+`php changelog-example.php <email> <password> <pluginId>`
+
+After that, you should get output that looks like:
+
+    A list of the changelogs associated with this plugin:
+
+    Array
+    (
+        [0] => stdClass Object
+            (
+                [id] => 569cf92abfa565fe520da0b0
+                [version] => 1.8.0
+                [changelog] => "This was the best version ever."
+            )
+
+        [1] => stdClass Object
+            (
+                [id] => 554b4eaab1254165511382a3
+                [version] => 2.0.1
+                [changelog] => "Just kidding, 2.0.1 is better than 1.8.0 in every way possible."
+            )
+
+    )
+
+    Changelog Added.  The data returned from the POST to Kernl:
+
+    Changelog entry added to version 1.8.0
+
+    Changelog Deleted.  The data returned from the DELETE to Kernl:
+
+    stdClass Object
+    (
+        [status] => 200
+        [message] => Changelog entry removed for version X.X.X
+    )

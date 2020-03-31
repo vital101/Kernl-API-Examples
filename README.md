@@ -9,6 +9,21 @@ This repository contains fully-baked examples of Kernl API usage written in PHP.
 - Clone this repository: `git clone https://github.com/vital101/Kernl-API-Examples.git`
 - In the cloned directory, install the dependencies: `composer install`
 
+## License Management Example
+
+The example for using Kernl's license management is in the `license-management-example.php` file. It takes 6 command line arguments.
+
+1. Your Kernl login email address.
+2. Your Kernl password
+3. The plugin ID that you want the license associated with
+4. The customer's email.
+5. The customer's first name.
+6. The customer's last name.
+
+To run the example, navigate to the root of the cloned repository and type the following:
+
+`php license-management-example.php <email> <password> <pluginId> <customerEmail> <customFirstName> <customerLastName>`
+
 ## Changelog Example
 
 The example for using the Plugin Changelog API is in the `changelog-example.php` file.  It takes 3 command line arguments.

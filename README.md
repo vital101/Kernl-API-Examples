@@ -86,3 +86,21 @@ To run the example, navigate to the root of the cloned repository and type the f
 After that, you should get output that looks like:
 
     Temporary Download URL: https://kernl.us/api/v2/public/temporary-download/5a5d0feda3813f12991877fa
+
+# Plugin / Theme Version Upload Example
+
+The example for uploading a new plugin version is at `plugin-version-upload.php`. It takes 5 command line arguments:
+
+1. Your email address that you log in to Kernl with.
+2. Your password.
+3. The plugin ID.
+4. The full path the `.zip` file of your new version.
+5. The version number (1.1.1, 1.1.2, etc)
+
+To run the example, navigate to the root of the cloned repository and type the following:
+
+`php plugin-version-upload.php email@example.com password myPluginId /path/to/plugin.zip 1.0.0`
+
+Once completed, you will be given output for the new version that looks like:
+
+    {"downloads":0,"isS3":true,"changelog":"none","_id":"60c697bcb1e559d0d2722bc5","uploadedDate":"2021-06-13T23:41:48.770Z","version":"1.0.1","size":164593,"fileName":"https://kernl-file-uploads.s3.amazonaws.com/2021-06-13/1623627707580/asdfasdfasdf.zip","__v":0

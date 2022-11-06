@@ -9,6 +9,29 @@ This repository contains fully-baked examples of Kernl API usage written in PHP.
 - Clone this repository: `git clone https://github.com/vital101/Kernl-API-Examples.git`
 - In the cloned directory, install the dependencies: `composer install`
 
+## License Activation Example
+
+The example for activating a license is located in `license-activation-example.php`. It takes two argument:
+
+1. License key from Kernl. This is generated (or provided by you) when you create the license.
+2. The domain this license should be activated for.
+
+To run the example, navigate to the root of the cloned repository and type the following:
+
+`php license-activation-example.php <license-key> <domain>`
+
+## License Validation Example
+
+The example for validating a license is located in `license-validation-example.php`. It takes two argument:
+
+1. License key from Kernl. This is generated (or provided by you) when you create the license.
+2. The domain this license should be activated for.
+
+To run the example, navigate to the root of the cloned repository and type the following:
+
+`php license-validation-example.php <license-key> <domain>`
+
+
 ## License Management Example
 
 The example for using Kernl's license management is in the `license-management-example.php` file. It takes 6 command line arguments.
